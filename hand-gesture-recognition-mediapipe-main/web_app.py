@@ -88,7 +88,7 @@ class SignLanguageRecognitionProcess(VideoProcessorBase):
         self.use_brect = True 
         self.keypoint_classifier = KeyPointClassifier()
         
-        with open('hand-gesture-recognition-mediapipe-main\model\keypoint_classifier\keypoint_classifier_label.csv',
+        with open('model\keypoint_classifier\keypoint_classifier_label.csv',
                 encoding='utf-8-sig') as f:
             self.keypoint_classifier_labels = csv.reader(f)
             self.keypoint_classifier_labels = [
